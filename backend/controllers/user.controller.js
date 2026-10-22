@@ -169,7 +169,7 @@ export const updateProfile = async (req, res) => {
 
         //resume 
         if (cloudResponse){
-            user.profile.resume = cloudResponse.secure_Url // save the cloudinary url
+            user.profile.resume = cloudResponse.secure_url // save the cloudinary url
             user.profile.resumeOriginalName = file.originalname // save the original name
         }
 
